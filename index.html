@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>五臓の体質チェック</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div id="check-page">
+        <h1>五臓の体質チェック</h1>
+        
+        <div class="question-group">
+            <p class="question-title">あなたの年齢を選択してください</p>
+            <label><input type="radio" name="age" value="under45" checked> 45歳未満</label>
+            <label><input type="radio" name="age" value="over45"> 45歳以上</label>
+        </div>
+
+        <p>あてはまるところに☑してください</p>
+
+        <div class="question-group">
+            <h2 class="type-title">1. 肝木タイプ</h2>
+            <label><input type="checkbox" class="type-kan"> 寝ようとすると、色々頭に浮かんで眠れない</label>
+            <label><input type="checkbox" class="type-kan"> ぐっすり眠れない</label>
+            <label><input type="checkbox" class="type-kan"> 憂うつを感じる</label>
+            <label><input type="checkbox" class="type-kan"> イライラしやすい</label>
+            <label><input type="checkbox" class="type-kan"> ストレスや緊張がある</label>
+            <label><input type="checkbox" class="type-kan"> 神経質だと思う</label>
+            <label><input type="checkbox" class="type-kan"> 眼精疲労を感じる</label>
+            <label><input type="checkbox" class="type-kan"> 目の周りがピクピク(痙攣)する</label>
+            <label><input type="checkbox" class="type-kan"> 爪が割れやすい</label>
+        </div>
+
+        <div class="question-group">
+            <h2 class="type-title">2. 心火タイプ</h2>
+            <label><input type="checkbox" class="type-shin"> 不安感やあせりがある</label>
+            <label><input type="checkbox" class="type-shin"> のぼせや手足のほてりがある</label>
+            <label><input type="checkbox" class="type-shin"> 動悸や息切れがおこりやすい</label>
+            <label><input type="checkbox" class="type-shin"> 胸の圧迫感を感じることがある</label>
+        </div>
+
+        <div class="question-group">
+            <h2 class="type-title">3. 脾土タイプ</h2>
+            <label><input type="checkbox" class="type-hi"> おなかが張りやすい</label>
+            <label><input type="checkbox" class="type-hi"> 疲れやすい</label>
+            <label><input type="checkbox" class="type-hi"> 冷えると下痢や肌のトラブルがおこりやすい</label>
+            <label><input type="checkbox" class="type-hi"> 下痢や便秘を繰り返す</label>
+            <label><input type="checkbox" class="type-hi"> 胃痛や食欲不振をおこしやすい</label>
+            <label><input type="checkbox" class="type-hi"> 食後に眠くなる</label>
+            <label><input type="checkbox" class="type-hi"> むくみやすい</label>
+            <label><input type="checkbox" class="type-hi"> 風邪をひきやすい</label>
+        </div>
+
+        <div class="question-group">
+            <h2 class="type-title">4. 肺金タイプ</h2>
+            <label><input type="checkbox" class="type-hai"> アレルギー体質である</label>
+            <label><input type="checkbox" class="type-hai"> 息切れや息苦しさを感じることがある</label>
+            <label><input type="checkbox" class="type-hai"> かぜをひきやすい</label>
+            <label><input type="checkbox" class="type-hai"> 肌や喉が乾燥しやすい</label>
+            <label><input type="checkbox" class="type-hai"> せきや痰が出やすい</label>
+            <label><input type="checkbox" class="type-hai"> 悪寒や発熱をしやすい</label>
+            <label><input type="checkbox" class="type-hai"> 鼻づまりや鼻水が出やすい</label>
+        </div>
+
+        <div class="question-group">
+            <h2 class="type-title">5. 腎水タイプ</h2>
+            <label><input type="checkbox" class="type-jin"> 眠りが浅く、夜中に何度も起きる</label>
+            <label><input type="checkbox" class="type-jin"> 腰から下に痛みや冷え、だるさを感じる</label>
+            <label><input type="checkbox" class="type-jin"> 頻尿や尿量減少がある</label>
+            <label><input type="checkbox" class="type-jin"> 物忘れがある</label>
+            <label><input type="checkbox" class="type-jin"> むくみやすい</label>
+            <label><input type="checkbox" class="type-jin"> めまいや耳鳴りが起こりやすい</label>
+            <label><input type="checkbox" class="type-jin"> 不正出血がある</label>
+        </div>
+
+        <button id="show-result-button">結果を見る</button>
+    </div>
+
+    <div id="result-kan" class="result-page">
+        <h3>あなたの体質</h3>
+        <h1>あなたは<br>肝木タイプ</h1>
+        <h2>お勧めの薬味は<br>肝の薬味!</h2>
+        <h3>お勧めの養生法</h3>
+        <ul>
+            <li>適度な運動(ウォーキング・ストレッチ・ヨガなど) 深呼吸やリラックス時間を意識する</li>
+            <li>香りでリフレッシュ (柑橘類:みかん、ゆず、レモンなど、ハーブ:ミント、レモングラス、ジャスミンなど)</li>
+            <li>おすすめ食材: 春菊、セロリ、ピーマン、ネギ、タケノコ、シソ、ミント、柑橘類、黒

@@ -1,0 +1,113 @@
+/* 全体の設定 */
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f4f4f4;
+    color: #333;
+    /* スマホ画面の最大幅を指定 */
+    max-width: 600px; 
+    margin: 0 auto; /* 中央揃え */
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    background-color: #ffffff;
+}
+
+h1, h2, h3 {
+    color: #444;
+    border-bottom: 2px solid #eee;
+    padding-bottom: 10px;
+}
+
+/* 質問グループ */
+.question-group {
+    margin-bottom: 20px;
+    background-color: #fafafa;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 15px;
+}
+
+.question-title {
+    font-size: 1.1em;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.type-title {
+    font-size: 1.2em;
+    color: #005a9b; /* 例：テーマカラー */
+    border-bottom: none;
+    padding-bottom: 0;
+}
+
+/* チェックボックスのラベル */
+label {
+    display: block; /* 縦に並べる */
+    margin-bottom: 10px;
+    font-size: 1em;
+    line-height: 1.5;
+}
+
+/* ボタンのデザイン */
+button {
+    display: block;
+    width: 100%;
+    padding: 15px;
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #fff;
+    background-color: #007bff; /* 目立つ色 */
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* ======== 結果表示画面 ======== */
+.result-page {
+    display: none; /* ★重要：普段は非表示にしておく */
+    padding: 20px;
+    border: 2px solid #007bff;
+    border-radius: 8px;
+    background-color: #f0f8ff;
+}
+
+.result-page h1 {
+    font-size: 2em;
+    color: #d9534f; /* 目立つ色 */
+    text-align: center;
+}
+
+.result-page h2 {
+    font-size: 1.5em;
+    text-align: center;
+    border: none;
+    color: #333;
+}
+
+.result-page h3 {
+    font-size: 1.2em;
+    border-bottom: 2px solid #007bff;
+    padding-bottom: 5px;
+}
+
+.result-page ul {
+    list-style-type: '● '; /* ビュレットを●にする */
+    padding-left: 20px;
+}
+
+.result-page li {
+    margin-bottom: 10px;
+    line-height: 1.6;
+}
+
+.back-button {
+    background-color: #6c757d; /* 戻るボタンは色を変える */
+}
+.back-button:hover {
+    background-color: #5a6268;
+}
