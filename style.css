@@ -5,9 +5,8 @@ body {
     padding: 20px;
     background-color: #f4f4f4;
     color: #333;
-    /* スマホ画面の最大幅を指定 */
     max-width: 600px; 
-    margin: 0 auto; /* 中央揃え */
+    margin: 0 auto;
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
     background-color: #ffffff;
 }
@@ -16,6 +15,14 @@ h1, h2, h3 {
     color: #444;
     border-bottom: 2px solid #eee;
     padding-bottom: 10px;
+}
+
+/* ★追加：メインロゴのデザイン */
+.main-logo {
+    display: block;
+    margin: 0 auto 20px auto; /* 上0, 左右auto, 下20px */
+    max-width: 200px; /* ロゴの最大幅 */
+    height: auto; /* 高さは自動 */
 }
 
 /* 質問グループ */
@@ -35,20 +42,18 @@ h1, h2, h3 {
 
 .type-title {
     font-size: 1.2em;
-    color: #005a9b; /* 例：テーマカラー */
+    color: #005a9b;
     border-bottom: none;
     padding-bottom: 0;
 }
 
-/* チェックボックスのラベル */
 label {
-    display: block; /* 縦に並べる */
+    display: block;
     margin-bottom: 10px;
     font-size: 1em;
     line-height: 1.5;
 }
 
-/* ボタンのデザイン */
 button {
     display: block;
     width: 100%;
@@ -56,7 +61,7 @@ button {
     font-size: 1.2em;
     font-weight: bold;
     color: #fff;
-    background-color: #007bff; /* 目立つ色 */
+    background-color: #007bff;
     border: none;
     border-radius: 8px;
     cursor: pointer;
@@ -69,7 +74,7 @@ button:hover {
 
 /* ======== 結果表示画面 ======== */
 .result-page {
-    display: none; /* ★重要：普段は非表示にしておく */
+    display: none;
     padding: 20px;
     border: 2px solid #007bff;
     border-radius: 8px;
@@ -78,7 +83,7 @@ button:hover {
 
 .result-page h1 {
     font-size: 2em;
-    color: #d9534f; /* 目立つ色 */
+    color: #d9534f;
     text-align: center;
 }
 
@@ -95,8 +100,19 @@ button:hover {
     padding-bottom: 5px;
 }
 
+/* ★追加：結果ページの画像デザイン */
+.result-image {
+    display: block;
+    margin: 20px auto; /* 左右中央揃え */
+    max-width: 150px; /* 画像の最大幅（パワポのイメージに合わせる） */
+    height: auto;
+    border-radius: 50%; /* 画像を円形にする（おしゃれにするTIPS） */
+    /* border-radius: 10px; 四角い画像の場合はこちら */
+}
+
+
 .result-page ul {
-    list-style-type: '● '; /* ビュレットを●にする */
+    list-style-type: '● ';
     padding-left: 20px;
 }
 
@@ -106,7 +122,7 @@ button:hover {
 }
 
 .back-button {
-    background-color: #6c757d; /* 戻るボタンは色を変える */
+    background-color: #6c757d;
 }
 .back-button:hover {
     background-color: #5a6268;
